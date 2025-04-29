@@ -1,4 +1,4 @@
-# name: Run Playwright E2E Tests
+#name: Run Playwright E2E Tests
 
 on:
   push:
@@ -31,11 +31,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Run Playwright tests
+      # Run Playwright tests with HOME set to /root
       - name: Run Playwright tests
         run: npx playwright test
         env:
           CI: true
+          HOME: /root
 
       # Upload Playwright test artifacts (e.g., reports) on failure
       - name: Upload test artifacts
