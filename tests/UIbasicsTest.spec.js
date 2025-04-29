@@ -22,7 +22,7 @@ test("My second test in Paywright",async ({page})=>{
  await  page.goto("https://rahulshettyacademy.com/loginpagePractise/");
 
  console.log(await page.title());
- await expect(page).toHaveTitle("Rahul Shetty Academy - Login page")
+ await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy")
 });
 
 test("My third test in Paywright",async ({page})=>
