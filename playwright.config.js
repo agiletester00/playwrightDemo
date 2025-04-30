@@ -33,7 +33,10 @@ export default defineConfig({
 
     // browserName : 'chromium'
     browserName : "firefox",
-    headless : true
+    headless : false,
+    screenshot : 'only-on-failure',
+    trace : 'retain-on-failure'
+
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 

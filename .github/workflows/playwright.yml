@@ -40,7 +40,7 @@ jobs:
 
       # Upload Playwright test artifacts (e.g., reports) on failure
       - name: Upload test artifacts
-        if: failure()
+        # if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
